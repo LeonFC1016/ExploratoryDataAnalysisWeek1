@@ -26,3 +26,5 @@ hist(df[,3], main="Global Active Power",
 #save the plot as Plot1.png
 png(filename="Plot1.png", width=480, height=480)
 
+dev.off()
+
