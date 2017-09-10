@@ -32,3 +32,4 @@ legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"
 
 #save the plot as Plot3.png
 png(filename="Plot3.png", width=480, height=480)
+dev.off()
