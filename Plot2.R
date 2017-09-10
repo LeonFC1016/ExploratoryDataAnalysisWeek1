@@ -21,6 +21,5 @@ df$datetime <- strptime(x, "%d/%m/%Y %H:%M:%S")
 with(df, plot(datetime, Global_active_power, type="l", xlab="",
               ylab="Global Active Power (kilowatts)"))
 
-# save th plot as Plot2.png
 png(filename="Plot2.png", width=480, height=480)
 dev.off()
