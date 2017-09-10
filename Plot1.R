@@ -16,6 +16,9 @@ df[,2] <- hms(df[,2])
 # coerce columns to numeric class
 df[,3:9] <- sapply(sapply(df[,3:9], as.character),as.numeric)
 
+#save the plot as Plot1.png
+png(filename="Plot1.png", width=480, height=480)
+
 # set parameters for graphic device layout
 par(mfrow=c(1,1))
 
@@ -23,8 +26,4 @@ par(mfrow=c(1,1))
 hist(df[,3], main="Global Active Power", 
      xlab="Global Active Power (kilowatts)", col="red")
 
-#save the plot as Plot1.png
-png(filename="Plot1.png", width=480, height=480)
-
 dev.off()
-
