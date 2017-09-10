@@ -30,6 +30,6 @@ with(df, lines(datetime, Sub_metering_3, type="l", col="blue"))
 legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col=c(1, 2, 4), lty=1, cex=0.75, y.intersp=.9)
 
-#save the plot as Plot3.png
+# save the plot as Plot3.png
 png(filename="Plot3.png", width=480, height=480)
 dev.off()
