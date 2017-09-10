@@ -23,3 +23,4 @@ with(df, plot(datetime, Global_active_power, type="l", xlab="",
 
 # save th plot as Plot2.png
 png(filename="Plot2.png", width=480, height=480)
+dev.off()
