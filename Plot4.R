@@ -43,3 +43,4 @@ with(df, plot(datetime, Global_reactive_power, type="l", xlab="datetime",
 
 # saves plot as Plot4.png
 png(filename="Plot4.png", width=480, height=480)
+dev.off()
